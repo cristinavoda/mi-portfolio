@@ -36,7 +36,7 @@ onMounted(() => {
     constructor() {
       this.x = mouse.x
       this.y = mouse.y
-      this.size = Math.random() * 4 + 1
+      this.size = Math.random() * 7 + 3
       this.speedX = Math.random() * 2 - 1
       this.speedY = Math.random() * 2 - 1
       this.color = `hsl(${Math.random() * 360}, 100%, 70%)`
