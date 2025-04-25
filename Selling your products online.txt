@@ -1,0 +1,19 @@
+Selling your products online
+An eCommerce solution is a feature-filled, customisable online storefront and shopping cart that will be integrated into the WordPress CMS. This will allow you to manage both your website pages and all of your store’s products in the one place. You will have full control over orders, shipping costs, sales, promotions, discounts and products.
+
+In order to receive credit card payments you will need to have a secure hosting package with an SSL certificate to ensure the security of your customer’s credit card details. You will also need a payment gateway to process the credit card payments and a merchant account with your bank to receive the payments.
+
+SSL Certificate
+The SSL certificate can be thought of as a lock-box for your data. It doesn’t make it any harder for anyone to obtain the data but it encrypts the data to the point that nobody can understand it. In addition to encrypting data, the SSL certificate ensures visitors that your business is legitimate, and will not attempt to defraud them in any way.
+
+Payment Gateways
+An eCommerce payment gateway is a service that authorises your customers’ credit card payments while processing them securely with your merchant account.
+
+Galway eCommerce Payment Solutions
+Merchant Account
+When dealing with a payment gateway, you will also be required to establish an online merchant account with your bank (fees vary depending on the bank). We will be able to provide you with information and instructions on how to establish a merchant account once we know which bank you are using.
+
+WooCommerce
+Your WordPress website will be transformed into an eCommerce online store using WooCommerce. WooCommerce is a WordPress eCommerce toolkit that helps you sell products online through your website. WooCommerce allows you to easily add, edit and amend products and pricing at any time, run sales and coupon campaigns offering a range of discount options such as 10% off or free shipping, and keep up-to-date with the store’s performance by viewing detailed reports.
+
+WooCommerce 2.0+ has been fully security audited by the leading WordPress security firm Sucuri to ensure it meets the highest WordPress security standards possible.

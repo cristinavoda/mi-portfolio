@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7410 3900">
+  <rect width="7410" height="3900" fill="#b22234"></rect>
+  <g fill="#fff">
+    <rect width="7410" height="300" y="300"></rect>
+    <rect width="7410" height="300" y="900"></rect>
+    <rect width="7410" height="300" y="1500"></rect>
+    <rect width="7410" height="300" y="2100"></rect>
+    <rect width="7410" height="300" y="2700"></rect>
+    <rect width="7410" height="300" y="3300"></rect>
+  </g>
+  <rect width="2964" height="2100" fill="#3c3b6e"></rect>
+  <g fill="#fff">
+    <!-- filas de estrellas -->
+    <g id="s">
+      <polygon points="247,90 283,210 400,210 305,270 340,390 247,315 154,390 189,270 94,210 211,210"></polygon>
+    </g>
+    <!-- clonar las estrellas -->
+    <use href="#s" x="0" y="0"></use>
+    <use href="#s" x="494" y="0"></use>
+    <use href="#s" x="988" y="0"></use>
+    <use href="#s" x="1482" y="0"></use>
+    <use href="#s" x="1976" y="0"></use>
+    <use href="#s" x="2470" y="0"></use>
+    <use href="#s" x="247" y="210"></use>
+    <use href="#s" x="741" y="210"></use>
+    <use href="#s" x="1235" y="210"></use>
+    <use href="#s" x="1729" y="210"></use>
+    <use href="#s" x="2223" y="210"></use>
+    <use href="#s" x="247" y="420"></use>
+    <use href="#s" x="741" y="420"></use>
+    <use href="#s" x="1235" y="420"></use>
+    <use href="#s" x="1729" y="420"></use>
+    <use href="#s" x="2223" y="420"></use>
+    <use href="#s" x="0" y="630"></use>
+    <use href="#s" x="494" y="630"></use>
+    <use href="#s" x="988" y="630"></use>
+    <use href="#s" x="1482" y="630"></use>
+    <use href="#s" x="1976" y="630"></use>
+    <use href="#s" x="2470" y="630"></use>
+    <!-- puedes continuar el patrón si necesitas más detalles -->
+  </g>
+</svg>
