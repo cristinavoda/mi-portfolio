@@ -129,6 +129,7 @@ function playRandomClickSound() {
   top: 20px;
   right: 40px;
   font-size: 62px;
+  font-weight: bolder;
   color: white;
   cursor: pointer;
   z-index: 2;
@@ -159,11 +160,12 @@ function playRandomClickSound() {
 
 
 /* SIDEBAR */
-.sidebar {
+.sidebar {background-color: rgb(6, 31, 32);
   position: fixed;
   top: 0;
   right: 0;
-  height: 100%;
+  height:fit-content
+  ;
   width: 200px;
  
   transform: translateX(100%);
@@ -185,7 +187,11 @@ function playRandomClickSound() {
 
 .sidebar a {
   color: white;
+  font-family: 'Poppins', sans-serif;
+
   text-decoration: none;
+ 
+
   font-size: 28px;
   transition: color 0.3s ease;
 }

@@ -24,6 +24,9 @@
     
   </div>
   </div>
+  <button class="volver-btn" @click="$router.push('/Home')">
+  ⬅️
+</button>
 
 </template>
 
@@ -294,5 +297,19 @@ button:hover {
   opacity: 0;
 }
 
+.volver-btn {
+  margin-top: 2rem;
+  background-color: #0a9396;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.volver-btn:hover {
+  background-color: #006d77;
+}
 
 </style>

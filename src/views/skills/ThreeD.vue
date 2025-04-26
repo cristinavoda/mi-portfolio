@@ -5,7 +5,7 @@
     All of the websites that we create have been built using tailor-made, custom WordPress themes which have been coded from scratch.
 
     <button class="volver-btn" @click="$router.push('/Presentacion')">
-      ⬅️ {{ $t('volver') || 'Volver' }}
+      ⬅️ 
     </button></div>
 </template>
  <style>

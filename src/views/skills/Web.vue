@@ -6,7 +6,7 @@ Un diseño responsivo significa que su sitio web se redimensiona con fluidez par
 
  Se prevé que el uso de internet móvil empezará a eclipsar el uso de internet en computadoras de escritorio y portátiles en 2014. Más de una cuarta parte de todas las búsquedas en Google se realizan actualmente desde dispositivos móviles. A medida que aumenta el número de personas que utilizan dispositivos móviles para acceder a internet, su público puede crecer con él utilizando un diseño responsivo para su sitio web.
  <button class="volver-btn" @click="$router.push('/Presentacion')">
-      ⬅️ {{ $t('volver') || 'Volver' }}
+      ⬅️ 
     </button>
 </div>
 </template>

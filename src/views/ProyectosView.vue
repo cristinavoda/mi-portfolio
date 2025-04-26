@@ -10,6 +10,9 @@
   </p>
   <a href="https://comunicar-app.netlify.app/" target="_blank" class="project-link">Ver App</a>
 </div>
+<button class="volver-btn" @click="$router.push('/Home')">
+  ⬅️
+</button>
 
 
 </template>
@@ -153,5 +156,19 @@ onMounted(() => {
   color: rgb(62, 180, 235);
 }
 
+.volver-btn {
+  background: none;
+  border: none;
+  font-size: 2rem; /* Tamaño grande y pro */
+  cursor: pointer;
+  color: #0f172a; /* Azul oscuro profesional (puedes cambiarlo) */
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin: 1rem;
+}
+
+.volver-btn:hover {
+  transform: translateX(-5px);
+  color: #0891b2; /* Un cyan elegante en hover */
+}
 
 </style>

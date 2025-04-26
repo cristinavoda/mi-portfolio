@@ -2,7 +2,7 @@
    <canvas id="mouse-particles"></canvas>
   <div class="home">
     <h1 class="title">{{ $t('Cristina Voda-Desarrollador Fullstack')}}</h1>
-    <p class="frase">{{ $t('Romper las barreras del espacio, tiempo y del silencio')}} </p>
+    <p class="frase">{{ $t('Romper las barreras del espacio, tiempo y  silencio')}} </p>
   </div>
 </template>
 
@@ -100,9 +100,12 @@ onMounted(() => {
 .title {
   writing-mode: sideways-rl;           
   text-orientation: mixed;
+ 
   margin-top: 30px;
   font-size: large;
-  font-family: italic;
+ 
+
+  font-weight: bolder;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3.5s steps(20, end), blink 0.7s step-end infinite;
@@ -125,7 +128,6 @@ onMounted(() => {
   text-orientation: mixed;
   font-size:xx-large; 
  max-width: 400px;
-  font-style: italic;
   opacity:initial;
   margin-bottom: 40px;
   overflow: hidden;

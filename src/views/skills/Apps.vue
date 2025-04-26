@@ -3,7 +3,7 @@
       <h1>Apps</h1>
       <p>Los apps ,intuitivas,funcionales desarrolladas con pasión y diseño  .</p>
       <button class="volver-btn" @click="$router.push('/Presentacion')">
-      ⬅️ {{ $t('volver') || 'Volver' }}
+      ⬅️ 
     </button>
     </div>
    
@@ -30,9 +30,12 @@
 
   .skill-detaill :hover {transform: scale(1.1) rotate(-3deg);
   filter: drop-shadow(0 12px 12px #00ffff) brightness(1.2);}
+ 
   .volver-btn {
+
   margin-top: 2rem;
   background-color: #0a9396;
+  filter: drop-shadow(5px 10px 5px #99b1b1a6);
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -41,6 +44,7 @@
   cursor: pointer;
   transition: background 0.2s ease;
 }
+
 .volver-btn:hover {
   background-color: #006d77;
 }

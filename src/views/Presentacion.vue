@@ -1,18 +1,23 @@
 <template>
   <div class="about-container">
+    
     <canvas ref="codeCanvas" class="code-canvas"></canvas>
     <div class="about-content">
+ 
 
       <div class="profile" data-aos="fade-up" data-aos-delay="300">
       
- <h1 data-aos="fade-down">Soy Cristina</h1>
-      <p>Desarrolladora de Aplicaciones Web</p>
+
 
       <img src="@/assets/tu-foto.jpg" alt="Foto"  class="profile-img"
       @mouseenter="playHoverSound" />
+      <h1 data-aos="fade-down">Soy Cristina</h1>
+      <p>Desarrolladora de Aplicaciones Web</p>
+
     </div>
 
     </div>
+   
 
       <div class="skills-container">
   <div
@@ -25,9 +30,14 @@
     <h3>{{ skill.title }}</h3>
     <p>{{ skill.description }}</p>
   </div>
+  <button class="volver-btn" @click="$router.push('/Home')">
+  ⬅️
+</button>
+
 </div>
     </div>  <!-- Skills Minicards -->
-      
+  
+   
 </template>
 
 <script setup>
@@ -116,14 +126,14 @@ function playHoverSound() {
 
 .about-container {
   position: relative;
- min-height: 160vh;
+ min-height: 2560vh;
   overflow: hidden;
   background: #000;
   color: #fff;
 }
 .profile img {
   width: 150px; 
-  border-radius: 70%;
+  border-radius: 72%;
   border: 1px solid rgba(60, 212, 192, 0.2);
   margin-top: -160px;
   margin-left: -180px;
@@ -172,7 +182,7 @@ function playHoverSound() {
   padding-top: 20vh;
   color: #fff;
   margin-left: 190px;
-  margin-top: -120px;
+  margin-top: 50px;
 }
 
 
@@ -184,8 +194,9 @@ function playHoverSound() {
   gap: 29px;
   width: 90%;
   max-width: 1000px;
-  margin: 3rem auto;
+  margin: 2rem auto;
   padding: 0 1rem;
+  margin-left: auto;
 }
 
 .skill-card {
@@ -214,4 +225,19 @@ function playHoverSound() {
     padding: 0.8rem;
   }
 }
+.volver-btn {
+  background: #fff;
+  border: none;
+  font-size: 2rem; /* Tamaño grande y pro */
+  cursor: pointer;
+  color: #155d6e; /* Azul oscuro profesional (puedes cambiarlo) */
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin: 1rem;
+}
+
+.volver-btn:hover {
+  transform: translateX(-5px);
+  color: #e4eff1; /* Un cyan elegante en hover */
+}
+
 </style>
