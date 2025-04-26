@@ -1,22 +1,27 @@
 <template>
   <div class="contacto-form-container">
+    
     <div class="float-box">
     <h2>{{ $t('Contacto') }}</h2>
+   <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mwpokbzj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
-    <form @submit.prevent="handleSubmit">
-      <label for="nombre">{{ $t('Nombre')}}:</label>
-      <input id="nombre" v-model="nombre" type="text" required />
-
-      <label for="email">Email:</label>
-      <input id="email" v-model="email" type="email" required />
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" v-model="mensaje" required></textarea>
-
-      <button class="submit">{{ $t('Enviar')}}</button>
-      <p v-if="showThankYou" class="thank-you-message">¡Gracias por tu mensaje!</p>
-
-    </form>
+    
+    
   </div>
   </div>
 
@@ -182,7 +187,7 @@ h2 {
   backdrop-filter: blur(10px);
   color: white;
   transition: all 0.3s ease;
-  margin-top: 200px;
+  margin-top: 90px;
   backdrop-filter: blur(1px);
   box-shadow: 15px 10px 6px rgba(57, 160, 160, 0.89);
   margin-left: -1px;

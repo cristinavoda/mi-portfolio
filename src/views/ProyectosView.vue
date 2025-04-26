@@ -103,7 +103,7 @@ onMounted(() => {
   max-width: 300px;
   margin: 20px auto;
   margin-left: 30px;
-  margin-top: 290px;
+  margin-top: 90px;
 }
 .project-icon {
   width: 100px;

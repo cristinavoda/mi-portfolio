@@ -51,7 +51,7 @@ onMounted(() => {
     draw() {
       ctx.fillStyle = this.color
       ctx.beginPath()
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 3)
       ctx.fill()
     }
   }
@@ -95,7 +95,7 @@ onMounted(() => {
   color: white;
   text-align:right;
   padding: -10px;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 .title {
   writing-mode: sideways-rl;           
