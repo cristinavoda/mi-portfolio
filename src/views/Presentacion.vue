@@ -125,7 +125,7 @@ function playHoverSound() {
   width: 150px; 
   border-radius: 70%;
   border: 1px solid rgba(60, 212, 192, 0.2);
-  margin-top: -80px;
+  margin-top: -160px;
   margin-left: -180px;
   transition: transform 0.5s ease, filter 0.5s ease;
   filter: drop-shadow(0 0 5px #00ffffa6);
