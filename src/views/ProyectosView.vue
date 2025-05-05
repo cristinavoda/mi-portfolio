@@ -10,6 +10,16 @@
   </p>
   <a href="https://comunicar-app.netlify.app/" target="_blank" class="project-link">Ver App</a>
 </div>
+<div class="project-card">
+  <img src="@/assets/interiorista/icono-interiorismo.png" alt="Icono Interiorismo" class="project-icon" />
+  <h3>ComforART - Interiorismo</h3>
+  <p>
+    Página web de presentación para un estudio de interiorismo. Diseño visual refinado con efecto cristal, video de fondo, navegación adaptable y paletas cromáticas elegantes.
+    Desarrollada con HTML, CSS, JavaScript, TailwindCSS y Vue.js. Optimizada para ordenadores, tablets y móviles.
+  </p>
+  <a href="https://interiorista.netlify.app/" target="_blank" class="project-link">Ver Página</a>
+</div>
+
 <button class="volver-btn" @click="$router.push('/Home')">
   ⬅️
 </button>
