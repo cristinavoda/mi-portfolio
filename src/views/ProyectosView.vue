@@ -20,6 +20,7 @@
   <a href="https://interiorista.netlify.app/" target="_blank" class="project-link">Ver Página</a>
 </div>
 
+
 <button class="volver-btn" @click="$router.push('/Home')">
   ⬅️
 </button>

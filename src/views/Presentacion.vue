@@ -230,7 +230,7 @@ function playHoverSound() {
   border: none;
   font-size: 2rem; /* Tamaño grande y pro */
   cursor: pointer;
-  color: #155d6e; /* Azul oscuro profesional (puedes cambiarlo) */
+  color: #155d6e;
   transition: transform 0.3s ease, color 0.3s ease;
   margin: 1rem;
 }
