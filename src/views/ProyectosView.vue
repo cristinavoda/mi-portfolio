@@ -19,6 +19,17 @@
   </p>
   <a href="https://interiorista.netlify.app/" target="_blank" class="project-link">Ver Página</a>
 </div>
+<div class="project-card">
+  <img src="@/assets/escribir/icon.png" alt="Icono Aprender Escribir" class="project-icon" />
+  <h3>Aprender Escribir</h3>
+  <p>
+    Aplicación educativa diseñada para ayudar a niños a iniciarse en la escritura de forma visual e interactiva. 
+    Cuenta con un diseño amigable, botones grandes, tipografía clara y animaciones simples que facilitan el aprendizaje.
+    <br /><br />
+    Desarrollada con HTML, CSS, JavaScript, TailwindCSS y Vue.js. Optimizada para ordenadores, tablets y móviles.
+  </p>
+  <a href="https://escribir-app.netlify.app/" target="_blank" class="project-link">Ver Página</a>
+</div>
 
 
 <button class="volver-btn" @click="$router.push('/Home')">

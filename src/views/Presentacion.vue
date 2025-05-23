@@ -12,7 +12,15 @@
       <img src="@/assets/tu-foto.jpg" alt="Foto"  class="profile-img"
       @mouseenter="playHoverSound" />
       <h1 data-aos="fade-down">Soy Cristina</h1>
-      <p>Desarrolladora de Aplicaciones Web</p>
+    <p>
+    Soy Cristina, Técnica Superior en Desarrollo de Aplicaciones Web (FP Grado Superior) con pasión por crear soluciones digitales funcionales, accesibles y centradas en las personas. 
+    <br /><br />
+    He desarrollado proyectos como <strong>COMUNICADOR</strong>, una app pensada para niños no verbales, inspirada en mi contacto con personas con autismo. También estoy trabajando en <strong>Aprender Escribir</strong>, una aplicación educativa para ayudar a los niños en sus primeros pasos con la escritura, y he diseñado la página web <strong>Interiorista – ComfortArt</strong>, centrada en el diseño de interiores con estilo y funcionalidad.
+    <br /><br />
+    Creo firmemente que la tecnología puede mejorar la vida de muchas personas, y por eso quiero formar parte de equipos que desarrollen aplicaciones útiles, educativas e inclusivas.
+    <br /><br />
+    Busco oportunidades laborales en remoto en el ámbito de desarrollo frontend, diseño web o administración web. Soy organizada, comprometida, con ganas de seguir aprendiendo y aportar valor real a través del código.
+  </p>  
 
     </div>
 
