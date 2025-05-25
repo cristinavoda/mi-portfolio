@@ -22,7 +22,7 @@ Un diseño responsivo significa que su sitio web se redimensiona con fluidez par
   text-align: center;
   
   border: 1px solid rgba(21, 163, 144, 0.2);
-  
+  border-radius: 8px;
   margin-top: 6px;
   transition: transform 0.5s ease, filter 0.5s ease;
   filter: drop-shadow(5px 10px 5px #00ffffa6);
