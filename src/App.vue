@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <div id="background-container"> <!-- VIDEO BACKGROUND -->
+    <div id="background-container">
     <video autoplay muted loop id="bg-video">
       <source src="/background.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
@@ -80,10 +80,10 @@ function handleClick() {
   playClickSound()
   toggleSidebar()
 }
-// Creamos el objeto de audio
+
 const clickSound = new Audio(clickSoundUrl)
 
-// Flag para permitir el sonido solo después de una interacción del usuario
+
 const canPlaySounds = ref(false)
 
 onMounted(() => {
@@ -112,7 +112,7 @@ function playRandomClickSound() {
 
 
 <style>
-/* VIDEO BACKGROUND */
+
 #bg-video {
   position: fixed;
   top: 0;
@@ -123,7 +123,7 @@ function playRandomClickSound() {
   z-index: -1;
 }
 
-/* TOGGLE BAR */
+
 .toggle {
   position: fixed;
   top: 20px;
@@ -159,7 +159,7 @@ function playRandomClickSound() {
 }
 
 
-/* SIDEBAR */
+
 .sidebar {background-color: rgb(6, 31, 32);
   position: fixed;
   top: 0;
@@ -169,7 +169,7 @@ function playRandomClickSound() {
   width: 200px;
  
   transform: translateX(100%);
-  transition: transform 0.6s ease; /* Puedes ajustar la velocidad */
+  transition: transform 0.6s ease; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -178,7 +178,7 @@ function playRandomClickSound() {
   z-index: 10;
 }
 
-/* Clase para hacerlo visible */
+
 .sidebar.visible {
   transform: translateX(0%);
 }

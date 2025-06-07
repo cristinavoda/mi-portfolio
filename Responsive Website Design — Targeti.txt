@@ -1,7 +1,0 @@
-Responsive Website Design — Targeting desktops, laptops, tablets and smart phones
-Having a responsive layout means that your website fluidly resizes for optimal viewing regardless of the screen size or device (desktop computer, laptop, tablet or smart phone). This ensures ease of use and a better audience experience without the need for panning, scrolling or resizing. Your audience is much more likely to enjoy viewing your website on a mobile device without needing to zoom in to read the text or to find the navigation menu.
-
-Red Ocean Responsive Web Design
- 
-
-Sales of mobile devices have already surpassed that of desktop computers and laptops. And it is predicated that mobile internet usage will begin to out-shadow desktop computer and laptop internet usage in 2014. More than a quarter of all Google searches are now taking place from mobile devices. As the number of people using mobile devices to access the internet grows, your audience can grow with it by utilising a responsive layout for your website.

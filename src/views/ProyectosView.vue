@@ -118,12 +118,12 @@ onMounted(() => {
   pointer-events: none;
 
 }.project-card {
-  background: rgba(255, 255, 255, 0.05);
-  color: azure;
+  background: rgba(1, 13, 22, 0.05);
+  color: rgba(255, 255, 255, 0.945);
   font-size: x-large;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 10px 20px 20px rgba(239, 240, 240, 0.945);
   text-align: center;
   max-width: 300px;
   margin: 20px auto;
@@ -134,12 +134,12 @@ onMounted(() => {
   width: 100px;
   height: 100px;
   transition: transform 0.5s ease, filter 0.5s ease;
-  filter: drop-shadow(0 0 5px #00ffffa6);
+  filter: drop-shadow(0 0 5px #0a8585f6);
   animation: fadeInUp 1s ease-out forwards;
   opacity: 0;
 }
 
-/* Al cargar */
+
 @keyframes fadeInUp {
   0% {
     transform: translateY(30px);
@@ -151,10 +151,10 @@ onMounted(() => {
   }
 }
 
-/* Hover animado */
+
 .project-icon:hover {
-  transform: scale(1.2) rotate(5deg);
-  filter: drop-shadow(0 0 10px #00ffff) brightness(1.2);
+  transform: scale(1.5) rotate(5deg);
+  filter: drop-shadow(0 20px 10px #00ffff) brightness(1.2);
 }
 
 .project-icon {
@@ -181,16 +181,15 @@ onMounted(() => {
 .volver-btn {
   background: none;
   border: none;
-  font-size: 2rem; /* Tamaño grande y pro */
+  font-size: 2rem; 
   cursor: pointer;
-  color: #0f172a; /* Azul oscuro profesional (puedes cambiarlo) */
+  color: #0f172a; 
   transition: transform 0.3s ease, color 0.3s ease;
   margin: 1rem;
 }
 
 .volver-btn:hover {
   transform: translateX(-5px);
-  color: #0891b2; /* Un cyan elegante en hover */
+  color: #0891b2; 
 }
-
 </style>

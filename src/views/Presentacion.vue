@@ -43,7 +43,7 @@
 </button>
 
 </div>
-    </div>  <!-- Skills Minicards -->
+    </div>  
   
    
 </template>
@@ -84,22 +84,21 @@ onMounted(() => {
   const canvas = codeCanvas.value;
   const ctx = canvas.getContext('2d');
 
-  // Ajusta tamaño del canvas
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
-  // Caracteres para la animación
+  
   const letters = '01<>!{}[]+=-_:;'.split('');
   const fontSize = 19;
   const columns = Math.floor(canvas.width / fontSize);
   const drops = Array(columns).fill(1);
 
   const draw = () => {
-    // Efecto fade
+    
     ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Caracteres en color neón
+    
     ctx.fillStyle = '#00ffcc';
     ctx.font = `${fontSize}px monospace`;
 
@@ -115,14 +114,14 @@ onMounted(() => {
   };
 
   setInterval(draw, 50);
-  // 🎧 Inicializar sonido hover
+ 
   hoverAudio = new Audio(require('@/assets/sounds/hover-sound.mp3'));
   hoverAudio.volume = 0.3;
 });
 const hoverSound = new Audio(require('@/assets/sounds/hover-sound.mp3'))
 
 function playHoverSound() {
-  hoverSound.currentTime = 0 // reinicia el sonido cada vez
+  hoverSound.currentTime = 0 
   hoverSound.play()
 }
 
@@ -194,7 +193,6 @@ function playHoverSound() {
 }
 
 
-/* Skills Grid */
 .skills-container
  {
   display: grid;
@@ -211,10 +209,9 @@ function playHoverSound() {
   background: rgba(250, 247, 247, 0.562);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(187, 236, 217, 0.808);
-  box-shadow: 10px 20px 40px rgba(21, 73, 64, 0.4);
+  box-shadow: 10px 20px 20px rgba(237, 240, 239, 0.911);
   border-radius: 12px;
   padding: 1rem;
-  
   margin-left: -20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -236,7 +233,7 @@ function playHoverSound() {
 .volver-btn {
   background: #fff;
   border: none;
-  font-size: 2rem; /* Tamaño grande y pro */
+  font-size: 2rem; 
   cursor: pointer;
   color: #155d6e;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -245,7 +242,7 @@ function playHoverSound() {
 
 .volver-btn:hover {
   transform: translateX(-5px);
-  color: #e4eff1; /* Un cyan elegante en hover */
+  color: #e4eff1; 
 }
 
 </style>
