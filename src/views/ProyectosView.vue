@@ -1,7 +1,7 @@
 <template>
     
     <canvas id="mouse-particles"></canvas>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="grid ">
 
     <div class="project-card">
         <img src="@/assets//comunicador/icon.png" alt="Icono Comunicador" class="project-icon" />
@@ -118,6 +118,13 @@ onMounted(() => {
   pointer-events: none;
 
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px 70px; 
+  justify-content: center; 
+}
+
 .project-card {
   background: rgba(1, 13, 22, 0.05);
   color: rgba(255, 255, 255, 0.945);
@@ -126,7 +133,6 @@ onMounted(() => {
   border-radius: 16px;
   box-shadow: 20px 10px 20px 20px rgba(239, 240, 240, 0.945);
   text-align: center;
-  max-width: 300px;
   margin: 20px auto;
   margin-left: 30px;
   margin-top: 90px;

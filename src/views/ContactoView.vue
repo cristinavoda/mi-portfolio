@@ -329,5 +329,9 @@ button:hover {
 .volver-btn:hover {
   background-color: #006d77;
 }
-
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr; 
+  }
+}
 </style>

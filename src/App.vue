@@ -11,6 +11,11 @@
     <div class="flags">
     <img src="@/assets/flags/es.svg" alt="Español" @click="setLang('es')" class="flag" />
   <img src="@/assets/flags/en.svg" alt="English" @click="setLang('en')"  class="flag"/>
+<!-- Botón de contacto con mailto -->
+<a href="mailto:cristinavoda483@gmail.com" class="contact-btn">
+  email 
+</a>
+
 </div>
 
 
@@ -152,7 +157,7 @@ function playRandomClickSound() {
 }
 
 .flags img {
-  width: 30px;
+  width: 40px;
   height: 20px;
   cursor: pointer;
   border-radius: 4px;
@@ -164,6 +169,23 @@ function playRandomClickSound() {
   transform: scale(1.1);
 }
 
+
+.contact-btn {
+  display: inline-block;
+  padding: 1px 11px;
+  background-color: #043133;
+  backdrop-filter: blur(19px);
+  width: 30px;
+  height: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #06585b; 
+}
 
 
 .sidebar {
