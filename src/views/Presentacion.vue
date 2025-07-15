@@ -11,15 +11,15 @@
 
       <img src="@/assets/tu-foto.jpg" alt="Foto"  class="profile-img"
       @mouseenter="playHoverSound" />
-      <h1 data-aos="fade-down">Soy Cristina</h1>
+      <h1 data-aos="fade-down">Hola</h1>
     <p>
-    Soy Cristina, Técnica Superior en Desarrollo de Aplicaciones Web (FP Grado Superior) con pasión por crear soluciones digitales funcionales, accesibles y centradas en las personas. 
+    Soy Cristina, IT-Desarrollo de Aplicaciones Web (FP Grado Superior-DAW) con pasión por crear soluciones digitales funcionales, accesibles y centradas en las personas. 
     <br /><br />
     He desarrollado proyectos como <strong>COMUNICADOR</strong>, una app pensada para niños no verbales, inspirada en mi contacto con personas con autismo. También estoy trabajando en <strong>Aprender Escribir</strong>, una aplicación educativa para ayudar a los niños en sus primeros pasos con la escritura, y he diseñado la página web <strong>Interiorista – ComfortArt</strong>, centrada en el diseño de interiores con estilo y funcionalidad.
     <br /><br />
     Creo firmemente que la tecnología puede mejorar la vida de muchas personas, y por eso quiero formar parte de equipos que desarrollen aplicaciones útiles, educativas e inclusivas.
     <br /><br />
-    Busco oportunidades laborales en remoto en el ámbito de desarrollo frontend, diseño web o administración web. Soy organizada, comprometida, con ganas de seguir aprendiendo y aportar valor real a través del código.
+    Busco oportunidades laborales en remoto en el ámbito de desarrollo frontend,desarollo y programacion software, diseño web o administración web. Soy organizada, comprometida, con ganas de seguir aprendiendo y aportar valor real a través del código.
   </p>  
 
     </div>
@@ -39,7 +39,7 @@
     <p>{{ skill.description }}</p>
   </div>
   <button class="volver-btn" @click="$router.push('/Home')">
-  ⬅️
+  ◀️
 </button>
 
 </div>
@@ -152,7 +152,7 @@ function playHoverSound() {
 }
 .profile-img:hover {
   transform: scale(1.1) rotate(-3deg);
-  filter: drop-shadow(12px 12px 12px #00ffff) brightness(1.2);
+  filter: drop-shadow(22px 12px 12px #00ffff) brightness(1.2);
 }
 
 @keyframes fadeInUp {
@@ -206,16 +206,16 @@ function playHoverSound() {
 }
 
 .skill-card {
-  background: rgba(250, 247, 247, 0.562);
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(187, 236, 217, 0.808);
-  box-shadow: 10px 20px 20px rgba(237, 240, 239, 0.911);
+  background: rgba(10, 92, 73, 0.534);
+  backdrop-filter: blur(400px);
+  border: 2px solid rgba(223, 230, 227, 0.808);
+  box-shadow: 10px 10px 10px rgba(237, 240, 239, 0.911);
   border-radius: 12px;
   padding: 1rem;
   margin-left: -20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(31, 180, 148, 0.2);
 }
 
 .skill-card:hover {
@@ -231,11 +231,14 @@ function playHoverSound() {
   }
 }
 .volver-btn {
-  background: #fff;
-  border: none;
-  font-size: 2rem; 
+  background: #054555;
+  border: 2px solid rgba(223, 230, 227, 0.808);
+  box-shadow: 10px 10px 10px rgba(237, 240, 239, 0.911);
+  width: 90px;
+  height:50px;
+  font-size: 1rem; 
   cursor: pointer;
-  color: #155d6e;
+  color: #ecf3f5;
   transition: transform 0.3s ease, color 0.3s ease;
   margin: 1rem;
 }

@@ -1,35 +1,35 @@
 <template>
     
     <canvas id="mouse-particles"></canvas>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
     <div class="project-card">
         <img src="@/assets//comunicador/icon.png" alt="Icono Comunicador" class="project-icon" />
-  <h3>Comunicar App</h3>
-  <p>
-    Una aplicación interactiva diseñada para facilitar la comunicación de personas no verbales.
-    Desarrollada con HTML, CSS, JavaScript y Vue.js. Incluye galería personalizable, efectos visuales y soporte de voz.
-  </p>
-  <a href="https://comunicar-app.netlify.app/" target="_blank" class="project-link">Ver App</a>
+  <h3>{{ $t('proyectos.cards.comunicador.titulo') }}</h3>
+  <p>{{ $t('proyectos.cards.comunicador.descripcion') }} </p>
+  <a href="https://comunicar-app.netlify.app/" target="_blank" class="project-link">{{ $t('proyectos.cards.comunicador.enlace') }}</a>
 </div>
+
 <div class="project-card">
   <img src="@/assets/interiorista/icono-interiorismo.png" alt="Icono Interiorismo" class="project-icon" />
-  <h3>ComforART - Interiorismo</h3>
-  <p>
-    Página web de presentación para un estudio de interiorismo. Diseño visual refinado con efecto cristal, video de fondo, navegación adaptable y paletas cromáticas elegantes.
-    Desarrollada con HTML, CSS, JavaScript, TailwindCSS y Vue.js. Optimizada para ordenadores, tablets y móviles.
-  </p>
-  <a href="https://interiorista.netlify.app/" target="_blank" class="project-link">Ver Página</a>
+  <h3>{{ $t('proyectos.cards.interiorismo.titulo') }}</h3>
+  <p>{{ $t('proyectos.cards.interiorismo.descripcion') }}</p>
+<a href="https://interiorista.netlify.app/" target="_blank" class="project-link">{{ $t('proyectos.cards.interiorismo.enlace') }}
+</a>
 </div>
+
+
 <div class="project-card">
   <img src="@/assets/escribir/icon.png" alt="Icono Aprender Escribir" class="project-icon" />
-  <h3>Aprender Escribir</h3>
-  <p>
-    Aplicación educativa diseñada para ayudar a niños a iniciarse en la escritura de forma visual e interactiva. 
-    Cuenta con un diseño amigable, botones grandes, tipografía clara y animaciones simples que facilitan el aprendizaje.
-    <br /><br />
-    Desarrollada con HTML, CSS, JavaScript, TailwindCSS y Vue.js. Optimizada para ordenadores, tablets y móviles.
-  </p>
-  <a href="https://escribir-app.netlify.app/" target="_blank" class="project-link">Ver Página</a>
+  <h3>{{ $t('proyectos.cards.escribir.titulo') }}</h3>
+  <p>{{ $t('proyectos.cards.escribir.descripcion') }}</p>
+  <a href="https://escribir-app.netlify.app/" target="_blank" class="project-link">
+    {{ $t('proyectos.cards.escribir.enlace') }}
+  </a>
 </div>
+
+
+</div>  
 
 
 <button class="volver-btn" @click="$router.push('/Home')">
@@ -117,13 +117,14 @@ onMounted(() => {
   z-index: 0;
   pointer-events: none;
 
-}.project-card {
+}
+.project-card {
   background: rgba(1, 13, 22, 0.05);
   color: rgba(255, 255, 255, 0.945);
   font-size: x-large;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 10px 20px 20px rgba(239, 240, 240, 0.945);
+  box-shadow: 20px 10px 20px 20px rgba(239, 240, 240, 0.945);
   text-align: center;
   max-width: 300px;
   margin: 20px auto;

@@ -1,23 +1,27 @@
 <template>
+    <canvas id="mouse-particles"></canvas>
+
   <div class="contacto-form-container">
     
     <div class="float-box">
+
     <h2>{{ $t('Contacto') }}</h2>
-   <!-- modify this form HTML and place wherever you want your form -->
+   
 <form
   action="https://formspree.io/f/mwpokbzj"
   method="POST"
 >
   <label>
-    Your email:
+    {{ $t('tu email:')}}
     <input type="email" name="email">
   </label>
   <label>
-    Your message:
+     {{ $t('tu mensaje:')}}
+    
     <textarea name="message"></textarea>
   </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+ 
+  <button type="submit">Enviar</button>
 </form>
 
     
@@ -27,7 +31,7 @@
   <button class="volver-btn" @click="$router.push('/Home')">
   ⬅️
 </button>
-
+ 
 </template>
 
 <script>
@@ -36,8 +40,8 @@ import gsap from 'gsap'
 import { onMounted } from 'vue'
 
 
-onMounted(() => {
-  // Entrada del formulario
+
+  
   gsap.from('.contact-form', {
     duration: 1.2,
     opacity: 0,
@@ -45,7 +49,7 @@ onMounted(() => {
     ease: 'power3.out'
   });
 
-  // Hover suave en botón
+  
   gsap.to('.submit-btn', {
     scale: 1.05,
     repeat: -1,
@@ -54,7 +58,7 @@ onMounted(() => {
     ease: 'sine.inOut'
   });
 
-  // Efectos al enfocar campos
+ 
   const fields = document.querySelectorAll('.float-box, .contact-form input, .contact-form textarea');
 
   fields.forEach((field) => {
@@ -74,7 +78,7 @@ onMounted(() => {
       });
     });
   });
-});
+
 
 
 
@@ -87,17 +91,17 @@ onMounted(() => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // Mostrar el mensaje
+    
     showThankYou.value = true;
 
-    // Animación de fade in
+    
     gsap.fromTo(
       '.thank-you-message',
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
     );
 
-    // Ocultar luego de unos segundos
+    
     setTimeout(() => {
       gsap.to('.thank-you-message', {
         opacity: 0,
@@ -106,9 +110,10 @@ onMounted(() => {
           showThankYou.value = false;
         },
       });
-    }, 4000); // visible por 4 segundos
+    }, 4000); 
   });
 });
+
 const inputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
 
 inputs.forEach((input) => {
@@ -119,6 +124,7 @@ inputs.forEach((input) => {
     gsap.to(input, { duration: 0.3, scale: 1, borderColor: '#ccc' });
   });
 });
+
 
 export default {
   name: 'ContactoView',
@@ -134,10 +140,10 @@ export default {
         mensaje: mensaje.value
       })
 
-      // Aquí podrías agregar lógica para enviar datos a un servidor, mostrar un mensaje de éxito, etc.
+      
       alert('Gracias por tu mensaje, pronto me pondré en contacto.')
       
-      // Limpiar campos del formulario
+      
       nombre.value = ''
       email.value = ''
       mensaje.value = ''
@@ -154,6 +160,13 @@ export default {
 </script>
 
 <style >
+#mouse-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
 
 #contact-form-container {
   display: flex;
@@ -164,15 +177,16 @@ export default {
   width: 380px;
   height:480px;
   background-color:transparent;
+  box-shadow: 17px 20px 25px 10px rgba(247, 247, 247, 0.938);
 }
 
-
+ 
 
 h2 {
   margin-bottom: 40px;
   font-size: 2rem;
   font-weight: bold;
-  background: linear-gradient(45deg, #2225ca, #80e2dd); /* Cambia los colores aquí */
+  background: linear-gradient(45deg, #f8f8fa, #80e2dd); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -182,17 +196,15 @@ h2 {
   max-width: 300px;
   min-width: 200px;
   margin-left: 20px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(1, 13, 22, 0.05);;
   padding: 2rem;
   border-radius: 16px;
-  border: 3px solid #108864;
-  box-shadow: 17px 20px 25px rgba(0, 255, 204, 0.4);
-  backdrop-filter: blur(10px);
+  border: 3px solid #f1f3f2;
+  box-shadow: 10px 10px 5px 5px rgba(120, 211, 223, 0.295);
+  backdrop-filter: blur(4px);
   color: white;
   transition: all 0.3s ease;
   margin-top: 90px;
-  backdrop-filter: blur(1px);
-  box-shadow: 15px 10px 6px rgba(57, 160, 160, 0.89);
   margin-left: -1px;
   padding: 40px;
   text-align: center;
@@ -203,9 +215,10 @@ h2 {
   width: 100%;
   padding: 1rem;
   background: transparent;
-  border: 1px solid #00ffcc;
+  border: 1px solid #f5f8f8;
+  backdrop-filter: blur(10px);
   border-radius: 8px;
-  color: white;
+  color: rgb(250, 251, 252);
   margin-bottom: 1rem;
   font-size: 1rem;
 }
@@ -213,14 +226,15 @@ h2 {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  box-shadow: 0 0 8px #00ffcc;
-  border-color: #00ffcc;
+   backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 8px 10px #f2f3f3;
+  border-color: #eff5f4;
 }
 .submit-btn {
   padding: 1rem 2rem;
-  border: none;
+  border: #e4e9e8;
   background: linear-gradient(45deg, #2225ca, #80e2dd);
-  color: black;
+  color: rgba(12, 136, 109, 0.5);
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
@@ -233,11 +247,10 @@ h2 {
 .submit-button:hover {
   background: #32bebe;
   transform: scale(1.05);
-  box-shadow: 0 0 15px #156152;
+  box-shadow: 0 0 15px #ecf0ef;
   
 }
 
-/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
@@ -251,9 +264,11 @@ form {
 
 label {
   display: block;
-  margin-bottom: 5px;
+  background-color: rgba(1, 13, 22, 0.05);
+   backdrop-filter: blur(10px);
+   margin-bottom: 5px;
   font-weight: bold;
-  color: #099e8f;
+  color: #f5f8f8;
 }
 
 input,
@@ -261,12 +276,12 @@ textarea {
   width: 100%;
   padding: 20px;
   margin-bottom: 15px;
-  color:#0d8a9b;
+  color:#f9faf9;
   margin-left: -20px;
   font-size: 16px;
-  background-color: rgb(252, 253, 253);
-  backdrop-filter: blur(5px);
-  border: 2px solid #d8f5e1;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border: 1px solid #f8fdfd;
   border-radius: 5px;
 }
 
@@ -279,10 +294,11 @@ button {
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
-  color: #1cd180;
+  color: #0a6c74;
   background-color: #e8eeee;
   border: none;
   border-radius: 5px;
+  backdrop-filter: blur(10px);
   cursor: pointer;
   transition: background-color 0.3s;
 }

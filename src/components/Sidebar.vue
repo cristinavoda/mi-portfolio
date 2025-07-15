@@ -1,9 +1,15 @@
 <template>
-    <nav>
-      <ul>
-        <li><router-link to="/">Inicio</router-link></li>
-        <li><router-link to="/about">Sobre mí</router-link></li>
-      </ul>
-    </nav>
-  </template>
+  <nav>
+    <ul>
+      <li><Traducion clave="sidebar.inicio" /></li>
+      <li><Traducion clave="sidebar.proyectos" /></li>
+      <li><Traducion clave="sidebar.presentacion" /></li>
+      <li><Traducion clave="sidebar.contacto" /></li>
+    </ul>
+  </nav>
+</template>
+<style> 
 
+.ul { backdrop-filter: blur(1px)}
+ 
+</style>

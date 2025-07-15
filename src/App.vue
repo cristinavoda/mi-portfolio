@@ -14,7 +14,7 @@
 </div>
 
 
-    <div class="sidebar-wrapper" @click.self="closeNavbar">
+    <div class="sidebar-outsideWrapper" @click.self="closeSidebar">
     
   
     <div class="toggle" @click="handleClick" >
@@ -23,14 +23,14 @@
   </div>
   
       <div class="sidebar" :class="{ visible: showSidebar }">
-      <router-link to="/" @click="closeSidebar">Inicio</router-link>
-      <router-link to="/proyectos" @click="closeSidebar">Proyectos</router-link>
-      <router-link to="/presentacion" @click="closeSidebar">Presentacion</router-link>
-      <router-link to="/contacto" @click="closeSidebar">{{$t('Contacto')}}</router-link>
+      <router-link to="/" @click="closeSidebar">{{ $t('sidebar.inicio') }}</router-link>
+      <router-link to="/proyectos" @click="closeSidebar">{{ $t('sidebar.proyectos') }}</router-link>
+      <router-link to="/presentacion" @click="closeSidebar">{{ $t('sidebar.presentacion') }}</router-link>
+      <router-link to="/contacto" @click="closeSidebar">{{ $t('sidebar.contacto') }}</router-link>
     </div>
     
 <main> <router-view></router-view></main>
-    <!-- RUTA ACTUAL -->
+    
     
   </div>
  
@@ -39,9 +39,6 @@
 <script setup>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-
-
-// Idiomasi 
 const { locale } = useI18n()
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -52,7 +49,7 @@ onMounted(() => {
   AOS.init()
 })
 
-// Lista de sonidos
+
 const soundFiles = [
   new Audio(require('@/assets/sounds/click1.mp3')),
   new Audio(require('@/assets/sounds/click2.mp3')),
@@ -65,17 +62,26 @@ function setLang(lang) {
   console.log('Idioma cambiado a:', lang)
 }
 
-// Sidebar (puedes moverlo también aquí)
+
 const showSidebar = ref(false)
 
 function toggleSidebar() {
   showSidebar.value = !showSidebar.value
   playRandomClickSound()
+   
+
+  if (showSidebar.value) {
+    setTimeout(() => {
+     showSidebar.value = false;   
+    }, 7000);
+  }
+
 }
 
 function closeSidebar() {
   showSidebar.value = false
 }
+
 function handleClick() {
   playClickSound()
   toggleSidebar()
@@ -160,16 +166,16 @@ function playRandomClickSound() {
 
 
 
-.sidebar {background-color: rgb(6, 31, 32);
+.sidebar {
+  background-color: rgb(4, 49, 51);
+  backdrop-filter: blur(1px);
   position: fixed;
   top: 0;
   right: 0;
-  height:fit-content
-  ;
+  height:fit-content;
   width: 200px;
- 
   transform: translateX(100%);
-  transition: transform 0.6s ease; 
+  transition: transform 0.9s ease; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -187,12 +193,10 @@ function playRandomClickSound() {
 
 .sidebar a {
   color: white;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: 'Inter';
+   backdrop-filter: blur(1px);
   text-decoration: none;
- 
-
-  font-size: 28px;
+  font-size: 38px;
   transition: color 0.3s ease;
 }
 

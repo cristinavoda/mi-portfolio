@@ -8,7 +8,7 @@
     top: 20px;
     left: 20px;
     font-size: 32px;
-    color: #00ffcc;
+    color: #f5faf9;
     background: transparent;
     border: none;
     cursor: pointer;

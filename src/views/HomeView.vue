@@ -1,12 +1,13 @@
 <template>
    <canvas id="mouse-particles"></canvas>
   <div class="home">
-    <h1 class="title">{{ $t('Cristina Voda-Desarrollador Fullstack')}}</h1>
-    <p class="frase">{{ $t('Romper las barreras del espacio, tiempo y  silencio')}} </p>
+    <h1 class="title">{{ $t('home.titulo') }}</h1>
+    <p class="frase">{{ $t('home.frase') }} </p>
   </div>
 </template>
 
 <script setup> 
+
 
 import { onMounted } from 'vue'
 
@@ -102,8 +103,8 @@ onMounted(() => {
   text-orientation: mixed;
  
   margin-top: 30px;
-  font-size: large;
- 
+  font-size: x-large;
+   font-family: 'Inter';
 
   font-weight: bolder;
   white-space: nowrap;
@@ -127,6 +128,7 @@ onMounted(() => {
   writing-mode: horizontal-tb;
   text-orientation: mixed;
   font-size:xx-large; 
+   font-family: 'Inter';
  max-width: 400px;
   opacity:initial;
   margin-bottom: 40px;
