@@ -5,23 +5,24 @@
     
     <div class="float-box">
 
-    <h2>{{ $t('Contacto') }}</h2>
+    <h2>{{ $t('contacto.contacto') }}</h2>
    
 <form
   action="https://formspree.io/f/mwpokbzj"
   method="POST"
 >
   <label>
-    {{ $t('tu email:')}}
+    {{ $t('contacto.tuEmail')}}
     <input type="email" name="email">
   </label>
   <label>
-     {{ $t('tu mensaje:')}}
+     {{ $t('contacto.tuMensaje')}}
     
     <textarea name="message"></textarea>
   </label>
  
-  <button type="submit">Enviar</button>
+  <button type="submit"> {{ $t('contacto.enviar')}}
+    </button>
 </form>
 
     
@@ -177,6 +178,7 @@ export default {
   width: 380px;
   height:480px;
   background-color:transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 17px 20px 25px 10px rgba(247, 247, 247, 0.938);
 }
 
@@ -199,8 +201,8 @@ h2 {
   background: rgba(1, 13, 22, 0.05);;
   padding: 2rem;
   border-radius: 16px;
-  border: 3px solid #f1f3f2;
-  box-shadow: 10px 10px 5px 5px rgba(120, 211, 223, 0.295);
+  border: 1px solid rgba(248, 252, 253, 0.295);
+  box-shadow: 10px 10px 5px 5px rgba(223, 229, 230, 0.295);
   backdrop-filter: blur(4px);
   color: white;
   transition: all 0.3s ease;
@@ -215,7 +217,7 @@ h2 {
   width: 100%;
   padding: 1rem;
   background: transparent;
-  border: 1px solid #f5f8f8;
+  border: 0,5px solid #f5f8f8;
   backdrop-filter: blur(10px);
   border-radius: 8px;
   color: rgb(250, 251, 252);

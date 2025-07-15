@@ -1,6 +1,13 @@
 <template>
     <div class="skill-detail">
-     
+     {{ $t('web.title') }} 
+     <p>{{ $t('web.parrafo1') }}</p>  
+   
+    <p>{{ $t('web.parrafo2') }}</p>
+    
+    <p>{{ $t('web.parrafo3') }}</p>
+
+    <p>{{ $t('web.parrafo4') }}</p>
     Diseño Web Responsivo — Orientado a computadoras de escritorio, portátiles, tabletas y smartphones
 Un diseño responsivo significa que su sitio web se redimensiona con fluidez para una visualización óptima, independientemente del tamaño de la pantalla o el dispositivo (computadora de escritorio, portátil, tableta o smartphone). Esto garantiza la facilidad de uso y una mejor experiencia para el usuario, sin necesidad de desplazarse, desplazarse ni redimensionar. Es mucho más probable que su público disfrute de su sitio web en un dispositivo móvil sin necesidad de hacer zoom para leer el texto o encontrar el menú de navegación.
 

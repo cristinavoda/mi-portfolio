@@ -11,16 +11,15 @@
 
       <img src="@/assets/tu-foto.jpg" alt="Foto"  class="profile-img"
       @mouseenter="playHoverSound" />
-      <h1 data-aos="fade-down">Hola</h1>
-    <p>
-    Soy Cristina, IT-Desarrollo de Aplicaciones Web (FP Grado Superior-DAW) con pasión por crear soluciones digitales funcionales, accesibles y centradas en las personas. 
-    <br /><br />
-    He desarrollado proyectos como <strong>COMUNICADOR</strong>, una app pensada para niños no verbales, inspirada en mi contacto con personas con autismo. También estoy trabajando en <strong>Aprender Escribir</strong>, una aplicación educativa para ayudar a los niños en sus primeros pasos con la escritura, y he diseñado la página web <strong>Interiorista – ComfortArt</strong>, centrada en el diseño de interiores con estilo y funcionalidad.
-    <br /><br />
-    Creo firmemente que la tecnología puede mejorar la vida de muchas personas, y por eso quiero formar parte de equipos que desarrollen aplicaciones útiles, educativas e inclusivas.
-    <br /><br />
-    Busco oportunidades laborales en remoto en el ámbito de desarrollo frontend,desarollo y programacion software, diseño web o administración web. Soy organizada, comprometida, con ganas de seguir aprendiendo y aportar valor real a través del código.
-  </p>  
+      <h1 data-aos="fade-down">{{ $t('presentacion.saludo') }}
+ !</h1>
+    <p>{{ $t('presentacion.parrafo1') }}</p>  
+   
+    <p>{{ $t('presentacion.parrafo2') }}</p>
+    
+    <p>{{ $t('presentacion.parrafo3') }}</p>
+
+    <p>{{ $t('presentacion.parrafo4') }}</p>
 
     </div>
 
@@ -35,8 +34,8 @@
     @mouseover="playHoverSound"
      @click="goToSkill(skill.route)"
   >
-    <h3>{{ skill.title }}</h3>
-    <p>{{ skill.description }}</p>
+    <h3>{{ $t(skill.title) }}</h3>
+    <p>{{ $t(skill.description) }}</p>
   </div>
   <button class="volver-btn" @click="$router.push('/Home')">
   ◀️
@@ -61,20 +60,21 @@ function goToSkill(route) {
 const codeCanvas = ref(null);
 
 let hoverAudio;
+
 const skills = [
   {
-    title: 'Apps',
-    description: 'Desarrollo de aplicaciones móviles',
+    title: 'skills.apps.title',
+    description: 'skills.apps.description',
     route: '/skills/apps'
   },
   {
-    title: 'Páginas Web',
-    description: 'Desarrollo web responsive',
+    title: 'skills.web.title',
+    description: 'skills.web.description',
     route: '/skills/web'
   },
   {
     title: 'Diseño 3D',
-    description: 'Modelado y render en 3D',
+    description: 'skills.diseño3D.description',
     route: '/skills/3d'
   },
 ];
@@ -154,6 +154,15 @@ function playHoverSound() {
   transform: scale(1.1) rotate(-3deg);
   filter: drop-shadow(22px 12px 12px #00ffff) brightness(1.2);
 }
+.about-content {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  padding-top: 20vh;
+  color: #fff;
+  margin-left: 190px; /* SOLO PC */
+  margin-top: 50px;
+}
 
 @keyframes fadeInUp {
   0% {
@@ -224,12 +233,12 @@ function playHoverSound() {
   transform: scale(0.85);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .skill-card {
     font-size: 0.95rem;
     padding: 0.8rem;
   }
-}
+
 .volver-btn {
   background: #054555;
   border: 2px solid rgba(223, 230, 227, 0.808);
@@ -247,5 +256,17 @@ function playHoverSound() {
   transform: translateX(-5px);
   color: #e4eff1; 
 }
+ .about-content {
+    margin-left: auto; 
+    margin-right: auto;
+    width: 90%; 
+    padding: 20px; 
+  }
 
+  .profile img {
+    width: 120px; 
+    margin: 20px auto; 
+    display: block; 
+  }
+}
 </style>

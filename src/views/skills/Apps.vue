@@ -1,8 +1,8 @@
 <template>
     <div class="skill-detail">
-      <h1>Apps</h1>
-      <p>Los apps ,intuitivas,funcionales desarrolladas con pasión y diseño  </p>
-      
+     <h1>{{ $t('apps.title') }}</h1>
+     <p>{{ $t('apps.descripcion') }}</p>
+
       
       <button class="volver-btn" @click="$router.push('/Presentacion')">
       ⬅️ 

@@ -73,7 +73,7 @@ function toggleSidebar() {
   if (showSidebar.value) {
     setTimeout(() => {
      showSidebar.value = false;   
-    }, 7000);
+    }, 5000);
   }
 
 }
@@ -167,8 +167,10 @@ function playRandomClickSound() {
 
 
 .sidebar {
-  background-color: rgb(4, 49, 51);
-  backdrop-filter: blur(1px);
+  background-color: rgb(4, 49, 51, 0,3);
+  backdrop-filter: blur(19px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   position: fixed;
   top: 0;
   right: 0;
@@ -201,7 +203,7 @@ function playRandomClickSound() {
 }
 
 .sidebar a:hover {
-  color: #90e0ef;
+  color: #1b889b;
 }
 .glitch-flash {
   animation: flash 0.4s ease-in-out;

@@ -1,8 +1,17 @@
 <template>
-<div class= "skill-detaill">Website Design — Creating the look & feel of your website
-    Simplicity is one of the golden rules of website design. The audience should have an enjoyable, positive experience when using your website. Whether their objective is reading content, watching a video or enrolling in a course, every action should be clear and concise throughout the website. Our approach is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
-    The website development process starts by taking the graphical elements (colours, fonts, layout, images) defined in the design process and coding them using web industry standards (PHP, HTML5, CSS3, JS, jQuery). This is typically done by first coding the home page, followed by templates for the interior pages. When the website is ready for review you will be supplied with login details to view the website before it is launched to the public. You will also be supplied with instructions on how to update your website.
-    All of the websites that we create have been built using tailor-made, custom WordPress themes which have been coded from scratch.
+<div class= "skill-detaill">{{ $t('three.title') }} 
+  <p>{{ $t('three.parrafo1') }}</p>  
+   
+    <p>{{ $t('three.parrafo2') }}</p>
+    
+    <p>{{ $t('three.parrafo3') }}</p>
+
+    <p>{{ $t('three.parrafo4') }}</p>
+    <p>{{ $t('three.parrafo5') }}</p>
+    <p>{{ $t('three.parrafo6') }}</p>
+
+    
+   
 
     <button class="volver-btn" @click="$router.push('/Presentacion')">
       ⬅️ 
