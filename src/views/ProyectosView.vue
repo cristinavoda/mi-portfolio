@@ -7,7 +7,7 @@
         <img src="@/assets//comunicador/icon.png" alt="Icono Comunicador" class="project-icon" />
   <h3>{{ $t('proyectos.cards.comunicador.titulo') }}</h3>
   <p>{{ $t('proyectos.cards.comunicador.descripcion') }} </p>
-  <a href="https://comunicar-app.netlify.app/" target="_blank" class="project-link">{{ $t('proyectos.cards.comunicador.enlace') }}</a>
+  <a href="https://comunicar-app.netlify.app/?v=2" target="_blank" class="project-link">{{ $t('proyectos.cards.comunicador.enlace') }}</a>
 </div>
 
 <div class="project-card">
